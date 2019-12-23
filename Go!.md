@@ -4,11 +4,9 @@ Key ideas: Systematically summary and categorize definitions of fairness, method
 (2) Types of fairness-> individual fairness, group fairness, subgroup fairness  
 (3) Methods that target biases in algorithms-> pre-processing, in-processing, post-processing  
 (4) Challenges-> how to transform from equality to equity (each individual or group is given the resources they need to succeed), is one synthetic definition of fairness possible, given a dataset how to identify unfairness  
-
 1. [Fairness and Transparency in Ranking (SIGIR'18)](https://dl.acm.org/ft_gateway.cfm?id=3308783&ftid=2036216&dwn=1&CFID=119489206&CFTOKEN=76711083f903224c-E779318B-BFED-B517-2464C9710362C053)	Carlos Castillo	(Universitat Pompeu Fabra)    
 Key ideas: A summary of measures and methods for fairness-aware ranking  
 A new classification mode-> attention/exposure-based measures and probability based measures.  
-
 2.[Beyond Parity: Fairness Objectives for Collaborative Filtering (NIPS'17)](https://arxiv.org/pdf/1705.08804) Sirui Yao (Virginia Tech), Bert Huang (Virginia Tech)  
 Task: CF-based recommendation  
 Previous work: demographic parity (the metric, but is only suitable when preference is unrelated to sensitive features), equal opportunity (basis of this paper)  
