@@ -59,7 +59,7 @@
   (3) Deterministic Constrained Sorting (DetConstSort) -> with programming, waits for multiple indices of recommendation before deciding on the next attribute value to get a candidate from, and may change its previous decisions  
   (4) Evaluate the framework on simulated data (majority of the experiments) and online test  
   
-- Compositional Fairness Constraints for Graph Embeddings (ICML'19) Avishek Joey Bose (McGill University, Mila), William L. Hamilton (McGill University, Mila, Facebook Research) [[code]](https://github.com/joeybose/Flexible-Fairness-Constraints)  
+- [Compositional Fairness Constraints for Graph Embeddings (ICML'19)](https://arxiv.org/pdf/1905.10674.pdf) Avishek Joey Bose (McGill University, Mila), William L. Hamilton (McGill University, Mila, Facebook Research) [[code]](https://github.com/joeybose/Flexible-Fairness-Constraints)  
   **Task**: (Social) Graph embedding  
   **Previous work**: Implementation of invariance constraints in classification and CF  
   **Challenge**: (of apply invariance constraints) the non-i.i.d. and non-Euclidean nature of relational, graph data  
