@@ -56,8 +56,7 @@
   **Key ideas**: Post-processing, re-rank the top-k items provided by baseline (unfair) ranking algorithms  
   (1) Deterministic Greedy (DetGreedy) algorithm -> generates rankings with as high score candidates as possible  
   (2)Deterministic Conservative (DetCons) algorithm and Deterministic Relaxed (DetRelaxed)-> integrality constraints, deal with cases when minimum representation requirements are violated   
-  (3) Deterministic Constrained Sorting (DetConstSort) -> with programming, waits for multiple indices  
-  of recommendation before deciding on the next attribute value to get a candidate from, and may change its previous decisions  
+  (3) Deterministic Constrained Sorting (DetConstSort) -> with programming, waits for multiple indices of recommendation before deciding on the next attribute value to get a candidate from, and may change its previous decisions  
   (4) Evaluate the framework on simulated data (majority of the experiments) and online test  
   
 - Compositional Fairness Constraints for Graph Embeddings (ICML'19) Avishek Joey Bose (McGill University, Mila), William L. Hamilton (McGill University, Mila, Facebook Research) [[code]](https://github.com/joeybose/Flexible-Fairness-Constraints)  
