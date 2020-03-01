@@ -11,7 +11,7 @@
 
 - [Beyond Parity: Fairness Objectives for Collaborative Filtering (NIPS'17)](https://arxiv.org/pdf/1705.08804) Sirui Yao, Bert Huang (Virginia Tech)  
   **Task**: CF-based recommendation.  
-  **Previous work**: Demographic parity (the metric, but is only suitable when preference is unrelated to sensitive features), equal opportunity (basis of this paper)  
+  **Previous works**: Demographic parity (the metric, but is only suitable when preference is unrelated to sensitive features), equal opportunity (basis of this paper)  
   **Challenges**: In recommendation problems preferences are related to sensitive features.  
   **Key ideas**: Define four new metrics to measure unfairness in CF: value unfairness, absolute unfairness, underestimation unfairness, overestimation unfairness and add them as penalty to loss function for optimization.  
   (1) Bias exists even reconstruction error is not high (verify challenge).  
@@ -19,7 +19,7 @@
 
 - [Fairness-Aware Tensor-Based Recommendation (CIKM'18)](http://faculty.cse.tamu.edu/caverlee/pubs/zhu2018fairness.pdf) Ziwei Zhu, Xia Hu, James Caverlee (Texas A&M University) [[code]](https://github.com/Zziwei/Fairness-Aware_Tensor-Based_Recommendation)  
   **Task**: MF-based recommendation  
-  **Previous work**: Matrix factorization, tensor-based method   
+  **Previous works**: Matrix factorization, tensor-based method   
   **Challenges**: 2D MF could not deal with multi-interactions, multiple sensitive attributes exist, recommendation quality trade-off  
   **Key ideas**: Tensors, sensitive features are first isolated from recommendation tensors and then sensitive information is extracted.    
   (1) Tensor-based approach -> capture multi-way interactions among users, items, and contexts  
@@ -35,7 +35,7 @@
 
 - [Fairness in Recommendation Ranking through Pairwise Comparisons (KDD'19)](https://doi.org/10.1145/3292500.3330745) Alex Beutel, Jilin Chen, Tulsee Doshi, Hai Qian, Li Wei, Yi Wu, Lukasz Heldt, Zhe Zhao, Lichan Hong, Ed H. Chi, Cristos Goodrow (Google)  
   **Task**: Neural collaborative filtering based recommendation   
-  **Previous work**: Pointwise recommender, pairwise ranking  
+  **Previous works**: Pointwise recommender, pairwise ranking  
   **Challenges**: Most fairness-aware recommenders treats recommendation as a pointwise prediction problem and applying those predictions for ranked list construction but this doesn't indicate the ranked list is fair. Unbiased offline evaluation is large in scale and thus costing in space and time.  
   **Key ideas** introduce Pairwise Fairness and a regularizer  
   (1) pairwise fairness: the likelihood of a clicked item being ranked above another relevant unclicked item is the same across both groups-> intra-group and inter-group.  
@@ -43,7 +43,7 @@
   
 - [Fairness Is Not Static: Deeper Understanding of Long Term Fairness via Simulation Studies (FAT'20)](https://dl.acm.org/doi/pdf/10.1145/3351095.3372878?download=true) Alexander D’Amour, Hansa Srinivasan, James Atwood, Pallavi Baljekar, D. Sculley, Yoni Halpern (Google Research) [[code]](https://github.com/google/ml-fairness-gym/)  
   **Task**: Evaluate long-term implications of deploying a fairness-aware machine learning based decision system.  
-  **Previous work**: Static problem setting and evaluation    
+  **Previous works**: Static problem setting and evaluation    
   **Challenges**: Long term dynamics are hard to assess in real practice  
   **Key ideas**: A simulation framework with agent-environment interaction loop and metrics  
   (1) Fit the problem into the framework of Markov Decision Processes.  
@@ -52,7 +52,7 @@
 
 -  [Fairness-Aware Ranking in Search & Recommendation Systems with Application to LinkedIn Talent Search (KDD'19)](https://arxiv.org/pdf/1905.01989) Sahin Cem Geyik, Stuart Ambler, Krishnaram Kenthapadi (LinkedIn Corporation)  
   **Task**: Fairness-aware ranking   
-  **Previous work**: Unfair web-scale search and recommendation  
+  **Previous works**: Unfair web-scale search and recommendation  
   **Key ideas**: Post-processing, re-rank the top-k items provided by baseline (unfair) ranking algorithms  
   (1) Deterministic Greedy (DetGreedy) algorithm -> generates rankings with as high score candidates as possible  
   (2)Deterministic Conservative (DetCons) algorithm and Deterministic Relaxed (DetRelaxed)-> integrality constraints, deal with cases when minimum representation requirements are violated   
@@ -61,8 +61,8 @@
   
 - [Compositional Fairness Constraints for Graph Embeddings (ICML'19)](https://arxiv.org/pdf/1905.10674.pdf) Avishek Joey Bose (McGill University, Mila), William L. Hamilton (McGill University, Mila, Facebook Research) [[code]](https://github.com/joeybose/Flexible-Fairness-Constraints)  
   **Task**: (Social) Graph embedding  
-  **Previous work**: Implementation of invariance constraints in classification and CF  
-  **Challenge**: (of apply invariance constraints) the non-i.i.d. and non-Euclidean nature of relational, graph data  
+  **Previous works**: Implementation of invariance constraints in classification and CF  
+  **Challenge**: (Of apply invariance constraints) The non-i.i.d. and non-Euclidean nature of relational, graph data  
   **Key ideas**: Learn a set of adversarial filters to remove information about particular sensitive attributes  
   (1) Enforcing representational invariance constraints on the node embeddings.  
   (2) Function ENC maps node to an embedding -> attribute-specific filter filters sensitive attributes-> compositional encoder to compose the filtered embeddings-> final embedding  
