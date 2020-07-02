@@ -67,4 +67,4 @@
   (1) Enforcing representational invariance constraints on the node embeddings.  
   (2) Function ENC maps node to an embedding -> attribute-specific filter filters sensitive attributes-> compositional encoder to compose the filtered embeddings-> final embedding  
   (3) Adversarial regularizer -> train the compositional encoder
-  test
+ 
